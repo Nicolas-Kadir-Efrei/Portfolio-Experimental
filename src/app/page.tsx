@@ -354,9 +354,6 @@ export default function Home() {
         <section id="projets" className="py-14 md:py-20">
           <Reveal>
             <h2 className="text-sm tracking-[0.28em] text-white/60">PROJETS</h2>
-            <p className="mt-5 text-2xl font-semibold tracking-tight text-white">
-              Quelques artefacts (en mouvement)
-            </p>
 
             <div className="mt-8 grid gap-6 md:grid-cols-3">
               {[
