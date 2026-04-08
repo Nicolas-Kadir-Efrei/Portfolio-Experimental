@@ -17,8 +17,13 @@ const title = "Nicolas Kadir CIFTCI — Portfolio";
 const description =
   "Développeur web — Bachelor 3, projets, parcours, compétences et contact. Recherche d’alternance (Mastère Data Engineering & IA, Efrei).";
 
+/** Google Search Console — balise meta google-site-verification */
+const GOOGLE_SITE_VERIFICATION =
+  "c1Z9qia7MpAVSuCoWfCC4VUZR1fLU5IMIYuQTvV3z9w";
+
 export async function generateMetadata(): Promise<Metadata> {
   const base = getSiteUrl();
+
   return {
     metadataBase: new URL(base),
     title,
@@ -38,6 +43,9 @@ export async function generateMetadata(): Promise<Metadata> {
       description,
     },
     robots: { index: true, follow: true },
+    verification: {
+      google: GOOGLE_SITE_VERIFICATION,
+    },
   };
 }
 
