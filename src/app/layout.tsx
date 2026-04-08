@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { getSiteUrl } from "@/lib/site";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,11 +13,33 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Nicolas Kadir CIFTCI — Portfolio",
-  description:
-    "Portfolio expérimental (3D + animations) — projets, parcours et contact.",
-};
+const title = "Nicolas Kadir CIFTCI — Portfolio";
+const description =
+  "Développeur web — Bachelor 3, projets, parcours, compétences et contact. Recherche d’alternance (Mastère Data Engineering & IA, Efrei).";
+
+export async function generateMetadata(): Promise<Metadata> {
+  const base = getSiteUrl();
+  return {
+    metadataBase: new URL(base),
+    title,
+    description,
+    alternates: { canonical: "/" },
+    openGraph: {
+      title,
+      description,
+      url: base,
+      siteName: "Nicolas Kadir CIFTCI",
+      locale: "fr_FR",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title,
+      description,
+    },
+    robots: { index: true, follow: true },
+  };
+}
 
 export default function RootLayout({
   children,
