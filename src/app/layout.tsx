@@ -19,7 +19,7 @@ const description =
 
 /** Google Search Console — balise meta google-site-verification */
 const GOOGLE_SITE_VERIFICATION =
-  "c1Z9qia7MpAVSuCoWfCC4VUZR1fLU5IMIYuQTvV3z9w";
+  "PFlht7lmzANn-PmpcrU8G-ZPHqMxqzpkuDBvAB-7TxM";
 
 export async function generateMetadata(): Promise<Metadata> {
   const base = getSiteUrl();
