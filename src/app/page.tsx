@@ -394,7 +394,7 @@ export default function Home() {
                   date: "2024",
                   desc: "Site vitrine avec services, tarifs, avis et prise de contact.",
                   tech: "Web · UI",
-                  demo: "https://vsg-pneu.vercel.app/",
+                  demo: "https://vsg-pneu-kadirs-projects-520eff88.vercel.app/",
                 },
               ].map((p) => (
                 <article

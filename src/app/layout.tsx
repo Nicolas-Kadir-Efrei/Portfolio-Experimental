@@ -29,6 +29,10 @@ export async function generateMetadata(): Promise<Metadata> {
     title,
     description,
     alternates: { canonical: "/" },
+    icons: {
+      icon: [{ url: "/icon.png", type: "image/png" }],
+      apple: [{ url: "/icon.png", type: "image/png" }],
+    },
     openGraph: {
       title,
       description,
