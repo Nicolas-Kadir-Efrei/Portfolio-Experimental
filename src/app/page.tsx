@@ -391,10 +391,10 @@ export default function Home() {
                 },
                 {
                   title: "VSG PNEUS",
-                  date: "2024",
+                  date: "2026",
                   desc: "Site vitrine avec services, tarifs, avis et prise de contact.",
                   tech: "Web · UI",
-                  demo: "https://vsg-pneu-kadir.vercel.app/",
+                  demo: "https://vsgpneu.com/",
                 },
               ].map((p) => (
                 <article
